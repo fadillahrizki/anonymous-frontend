@@ -1,7 +1,14 @@
-<div class="px-96 py-4 border-b flex justify-between items-center">
+<div class="px-96 py-4 border-b border-[#dbdbdb] flex justify-between items-center gap-4">
     <h2><img src="assets/icons/Instagram.svg" alt="Instagram"></h2>
-    <input type="text" class="bg-gray-200 px-4 w-80 py-2 rounded-lg" placeholder="Search">
-    <div class="flex gap-4">
+    <div class="relative text-gray-600 w-3/12">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </span>
+        <input type="search" name="q" class="py-2 text-sm text-white w-full bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autocomplete="off">
+    </div>
+    <div class="flex items-center gap-x-8">
         <a href="" class="text-xl">
             <i class="fa-solid fa-house"></i>
         </a>
@@ -16,6 +23,9 @@
         </a>
         <a href="" class="text-xl">
             <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="">
+            <img src="assets/images/profile.jpg" class="h-6 w-6 bg-cover bg-center rounded-full" alt="Profile">
         </a>
     </div>
 </div>
