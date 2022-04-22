@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="bg-gray-50">
-    <main class="grid grid-cols-1 gap-6 content-center p-4 w-full md:w-1/2 lg:w-4/12 xl:w-3/12 m-auto min-h-screen py-5">
+    <main class="grid grid-cols-1 gap-6 content-center p-4 w-full md:w-1/2 lg:w-4/12 xl:w-3/12 mx-auto my-20">
         <div class="border border-[#DBDBDB] bg-white p-8 xl:p-12 w-full m-auto grid grid-cols-1 gap-8">
             <img src="assets/icons/Instagram.svg" class="m-auto w-64 h-12" alt="Instagram">
             <h4 class="text-center font-semibold text-[#8E8E8E] text-[17px]">Sign up to see photos and videos from your friends.</h4>
@@ -35,7 +35,7 @@
                 <input type="text" class="rounded text-[12px] text-[#8E8E8E] border border-[#DBDBDB] p-2 focus:outline-none" name="fullname" placeholder="Fullname">
                 <input type="text" class="rounded text-[12px] text-[#8E8E8E] border border-[#DBDBDB] p-2 focus:outline-none" name="username" placeholder="Username,">
                 <input type="password" class="rounded text-[12px] text-[#8E8E8E] border border-[#DBDBDB] p-2 focus:outline-none" name="password" placeholder="Password">
-                <a href="index.html" class="bg-[#0095F6] p-2 text-[12px] text-center rounded text-white font-semibold">Sign Up</a>
+                <button type="button" class="bg-[#0095F6] p-2 text-[12px] text-center rounded text-white font-semibold">Sign Up</button>
             </form>
             <a href="" class="text-[12px] text-center text-[#8E8E8E]">By signing up, you agree to our <span class="font-bold">Terms</span> , <span class="font-bold">Data Policy</span> and <span class="font-bold">Cookies Policy</span>.</a>
         </div>
@@ -48,8 +48,8 @@
             <img src="assets/images/playstore.png" class="w-1/2" alt="playstore.png">
         </div>
     </main>
-    <footer class="flex flex-col py-0 px-[16px] w-full mx-[400px] text-[12px] text-[#8E8E8E] mt-[40px]">
-        <div class="flex">
+    <footer class="py-0 px-[16px] text-center text-[12px] text-[#8E8E8E]">
+        <div>
             <a href="">Meta</a>
             <a href="">About</a>
             <a href="">Blog</a>
@@ -63,7 +63,7 @@
             <a href="">Locations</a>
             <a href="">Instagram Lite</a>
         </div>
-        <div class="flex mt-[20px] ml-[230px] pb-[50px]">
+        <div class="mt-[20px] pb-[50px] flex justify-center">
             <select class="w-[60px]" name="Language" id="lan">
                 <option value="En">English</option>
                 <option value="Id">Indonesia</option>
@@ -74,5 +74,11 @@
             <p class="ml-[10px]">&#169; 2022 Instagram from Meta</p>
         </div>
     </footer>
+
+    <script>
+        if (localStorage.getItem("login")) {
+            location.href = "index.html"
+        }
+    </script>
 </body>
 </html>
