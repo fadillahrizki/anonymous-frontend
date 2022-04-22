@@ -51,3 +51,8 @@ footer select{
 .post a{
     color: #00376b
 }
+
+.prof img {
+    height: 300px;
+    width: 300px;
+}
