@@ -9,15 +9,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function(){
-            $("header").load("header.html"); 
-        })
-    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50">
-    <header></header>
+    <header>
+        <div class="wrapper py-3 border-b border-[#dbdbdb] flex justify-between items-center gap-4">
+            <a href="index.html" class="mt-1"><img src="assets/icons/Instagram.svg" alt="Instagram"></a>
+            <div class="relative text-gray-600 w-3/12 hidden md:inline">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                    <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </span>
+                <input type="search" name="q"
+                    class="py-2 text-sm text-white w-full bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900"
+                    placeholder="Search..." autocomplete="off">
+            </div>
+            <div class="flex items-center gap-x-8">
+                <a href="" class="text-xl">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="" class="text-xl">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="" class="text-xl">
+                    <i class="fa-regular fa-square-plus"></i>
+                </a>
+                <a href="" class="text-xl">
+                    <i class="fa-regular fa-compass"></i>
+                </a>
+                <a href="" class="text-xl">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="detail.html">
+                    <img src="assets/images/profile.jpg" class="h-6 w-6 bg-cover bg-center rounded-full" alt="Profile">
+                </a>
+            </div>
+        </div>
+    </header>
     <main class="wrapper flex flex-row gap-4 my-4">
         <div class="md:basis-2/3 grid grid-cols-1 gap-4">
 
@@ -91,10 +120,13 @@
                 </div>
                 <img src="assets/images/post.jpg" class="w-full bg-cover" alt="Post">
                 <div class="grid grid-cols-1 gap-3 bg-white p-4">
-                    <div class="flex items-center gap-4">
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                        </div>
+                        <a href="" class="text-[24px]"><i class="fa-regular fa-bookmark"></i></a>
                     </div>
                     <p class="font-semibold">61 likes</p>
                     <p><b>john_doe</b> Pemberian nama untuk teleskop luar angkasa baru NASA mendapat protes dari banyak kalangan. Teleskop baru itu diberi nama
@@ -121,10 +153,13 @@
                 </div>
                 <img src="assets/images/post.jpg" class="w-full bg-cover" alt="Post">
                 <div class="grid grid-cols-1 gap-3 bg-white p-4">
-                    <div class="flex items-center gap-4">
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                        </div>
+                        <a href="" class="text-[24px]"><i class="fa-regular fa-bookmark"></i></a>
                     </div>
                     <p class="font-semibold">61 likes</p>
                     <p><b>john_doe</b> Pemberian nama untuk teleskop luar angkasa baru NASA mendapat protes dari banyak kalangan. Teleskop baru itu diberi nama
@@ -151,10 +186,13 @@
                 </div>
                 <img src="assets/images/post.jpg" class="w-full bg-cover" alt="Post">
                 <div class="grid grid-cols-1 gap-3 bg-white p-4">
-                    <div class="flex items-center gap-4">
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                        </div>
+                        <a href="" class="text-[24px]"><i class="fa-regular fa-bookmark"></i></a>
                     </div>
                     <p class="font-semibold">61 likes</p>
                     <p><b>john_doe</b> Pemberian nama untuk teleskop luar angkasa baru NASA mendapat protes dari banyak kalangan. Teleskop baru itu diberi nama
@@ -181,10 +219,13 @@
                 </div>
                 <img src="assets/images/post.jpg" class="w-full bg-cover" alt="Post">
                 <div class="grid grid-cols-1 gap-3 bg-white p-4">
-                    <div class="flex items-center gap-4">
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
-                        <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-heart"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-comment"></i></a>
+                            <a href="" class="text-[24px]"><i class="fa-regular fa-paper-plane"></i></a>
+                        </div>
+                        <a href="" class="text-[24px]"><i class="fa-regular fa-bookmark"></i></a>
                     </div>
                     <p class="font-semibold">61 likes</p>
                     <p><b>john_doe</b> Pemberian nama untuk teleskop luar angkasa baru NASA mendapat protes dari banyak kalangan. Teleskop baru itu diberi nama
