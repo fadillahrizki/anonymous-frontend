@@ -47,3 +47,7 @@ footer select{
     border: 1px solid white ;
     background-color: white;
 }
+
+.post a{
+    color: #00376b
+}
